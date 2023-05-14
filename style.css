@@ -1,0 +1,198 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+img{
+  object-fit: cover;
+  vertical-align: bottom;
+}
+ul{
+  list-style: none;
+}
+header{
+  background-color: #555555;
+  width: 100%;
+  height: 60px;
+}
+
+header div{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 100%;
+}
+
+#post{
+ text-align: center;
+ border-radius: 8px;
+ padding: 10px;
+ background-color: #44AFFD; 
+ margin-right: 10px;
+ width: 100px;
+}
+
+main{
+  flex-direction: column;
+  display: flex;
+}
+
+main img{
+  margin: 40px auto;
+}
+
+ main input {
+  margin: 30px auto;
+}
+
+#back{
+  margin-top: 40px;
+}
+
+
+#preview{
+  width: 300px;
+  height: 300px;
+  border: 1px dotted black;
+}
+
+.home {
+  width: 80%;
+  height: auto;
+  margin: 40px auto;
+}
+
+.home ul{
+  flex-wrap: wrap;
+  display: flex;
+  gap: 15px;
+  
+}
+
+.home ul li{
+  width: calc((100% - 30px) / 3);
+}
+.home ul img{
+  width: 100%;
+}
+
+.main-form{
+  display: flex;
+  width: 85%;
+  gap: 30px;
+  margin: 50px auto 0;
+}
+
+.image-update-delete{
+  height: 100%;
+}
+ .update-delete{
+  text-align: center;
+  margin-top: 10px;
+}
+.update-delete #update{
+  all: unset;
+  width: 60px;
+  padding: 10px;
+  border-radius: 7px;
+  background-color: greenyellow;
+  color: white;
+}
+.update-delete #delete{
+  all: unset;
+  width: 60px;
+  padding: 10px;
+  border-radius: 7px;
+  background-color: red;
+  color: white
+}
+
+.image-update-delete #back{
+  display: block;
+  padding: 6px;
+  border-radius: 4px;
+  margin-bottom: 0;
+}
+.image-update-delete img{
+ width: 100%;
+ height: 470px;
+}
+.image-update-delete a{
+  text-align: center;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #44AFFD; 
+  margin: 0 auto;
+  width: 70px;
+}
+
+.main-form .comment ul{
+  height: 280px;
+  overflow-y: scroll;
+}
+.comment{
+  position: relative;
+  width: 500px;
+}
+.comment ul li + li {
+  margin-top: 8px;
+}
+.comment textarea{
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 8px;
+  padding: 17px;
+}
+.comment form #submit{
+  display: block;
+  all: unset;
+  width: 60px;
+  padding: 10px;
+  border-radius: 7px;
+  background-color: #44AFFD;
+  color: white;
+  text-align: center;
+  position: absolute;
+  bottom: 80px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+}
+
+@media(min-width: 700px){
+  .home ul li{
+    width: calc((100% - 30px) / 2);
+  }
+}
+
+@media(max-width: 700px){
+  .home ul{
+ width: 100%;
+  }
+  
+  .home ul li{
+   width: 100%;
+  }
+}
+@media(min-width: 1100px){
+  .home ul{
+    flex-wrap: wrap;
+    display: flex;
+    gap: 15px;
+    
+  }
+  
+  .home ul li{
+    width: calc((100% - 30px) / 3);
+  }
+}
+
+
+
+
+
